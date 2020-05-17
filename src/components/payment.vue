@@ -165,7 +165,7 @@ main .modal-backdrop {
   }
   .modal-button {
     top: 5%;
-    left: 80%;
+    left: 70%;
   }
 }
 
