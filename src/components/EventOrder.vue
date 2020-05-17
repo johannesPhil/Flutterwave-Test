@@ -151,8 +151,9 @@ export default {
 .add {
   background-color: #fff;
   color: #828282;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+
   border-radius: 50%;
   display: flex;
   align-items: center;
