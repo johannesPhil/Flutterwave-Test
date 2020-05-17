@@ -1,24 +1,25 @@
 <template>
-    <header>
-      <div class="logo"><h1>LOGO</h1></div>
-      <div class="headerlinks">
-        <a href="" class="headerlink__getticket headerlinks--nobg">
-          I didn't get my tickets
-        </a>
-        <a href="" class="headerlink__createevent headerlinks--bg">
-          create your own event
-        </a>
-      </div>
-    </header>
+  <header>
+    <router-link :to="{ name: 'events' }" class="logo">
+      <img src="../assets/flutterwave.svg" alt="" />
+    </router-link>
+    <div class="headerlinks">
+      <a href class="headerlink__getticket headerlinks--nobg"
+        >I didn't get my tickets</a
+      >
+      <a href class="headerlink__createevent headerlinks--bg button--orange"
+        >create your own event</a
+      >
+    </div>
+  </header>
 </template>
 
 <style>
-
-a{
+a {
   display: inline-block;
   text-decoration: none;
 }
-img{
+img {
   width: 100%;
   height: 100%;
 }
@@ -27,35 +28,38 @@ img{
 *:after {
   box-sizing: border-box;
 }
-header{
-    width: 100%;
-    margin: 5% 0;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+header {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.headerlinks{
-    text-transform: capitalize;
-    width: auto;
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
+.logo {
+  width: 30%;
 }
-.headerlinks--nobg{
+.headerlinks {
+  text-transform: capitalize;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerlinks--nobg {
   display: block;
-    color: #000;
-    padding: 0 5%;
+  color: #000;
+  padding: 0 5%;
+  width: max-content;
+  white-space: nowrap;
 }
-.headerlinks--bg{
+.headerlinks--bg {
   display: block;
   width: max-content;
-  overflow: auto;
+  white-space: nowrap;
   border-radius: 4.06693px;
   background-color: #f5a623;
-  color:#fff;
+  color: #fff;
   padding: 2.5% 5%;
 }
 .button--orange {
@@ -65,9 +69,9 @@ header{
   text-decoration: none;
   padding: 10px 30px;
   background: #f5a623;
+  border: transparent
 }
 .button--orange:hover {
-  color: #fff;
   background-color: #fff;
   color: #f5a623;
 }
